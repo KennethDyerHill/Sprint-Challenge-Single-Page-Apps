@@ -38,7 +38,7 @@ export default function CharacterList() {
       <SearchForm onSubmit={handleSubmit} />
       <h2>{characters.map(character => {
         key++;
-        return <CharacterCard name={character.name} gender={character.gender} key={key}/>
+        return <CharacterCard name={character.name} gender={character.gender} key={key} url={character.url} />
       })}</h2>
     </section>
   );
